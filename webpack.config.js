@@ -9,7 +9,7 @@ module.exports = {
     filename: 'bundle.[hash].js',
   },
   resolve: {
-    extensions: ['.js', '.jsx'],
+    extensions: ['.js', '.jsx', '.styl'],
   },
   module: {
     rules: [
@@ -25,6 +25,10 @@ module.exports = {
         use: {
           loader: 'html-loader',
         },
+      },
+      {
+        test: /\.styl$/,
+        use: ['style-loader', 'css-loader', 'stylus-loader'],
       },
     ],
   },
