@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDom from 'react-dom';
 
-import Header from './containers/Header.jsx';
+import Header from './containers/Header';
 
 import './styles/index.styl';
 

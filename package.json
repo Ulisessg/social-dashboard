@@ -28,6 +28,7 @@
     "css-loader": "^4.2.1",
     "html-loader": "^1.2.0",
     "html-webpack-plugin": "^4.3.0",
+    "husky": "^4.2.5",
     "mini-css-extract-plugin": "^0.10.0",
     "style-loader": "^1.2.1",
     "stylus": "^0.54.8",
@@ -35,5 +36,11 @@
     "webpack": "^4.44.1",
     "webpack-cli": "^3.3.12",
     "webpack-dev-server": "^3.11.0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint",
+      "pre-push": "npm run lint"
+    }
   }
 }
