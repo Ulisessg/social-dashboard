@@ -47,7 +47,7 @@ module.exports = {
     port: 9000,
     watchContentBase: true,
     watchOptions: {
-      poll: true,
+      poll: 420,
     },
   },
 };

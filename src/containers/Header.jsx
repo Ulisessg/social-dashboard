@@ -1,7 +1,8 @@
 import React from 'react';
 
-import EnableDarkMode from '../components/EnableDarkMode';
+// import EnableDarkMode from '../components/EnableDarkMode';
+import SuscriberCount from '../components/SubscriberCount.jsx';
 
-const Header = () => <EnableDarkMode />;
+const Header = () => <SuscriberCount />;
 
 export default Header;
