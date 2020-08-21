@@ -1,8 +1,16 @@
 import React from 'react';
 
-// import EnableDarkMode from '../components/EnableDarkMode';
-import SuscriberCount from '../components/SubscriberCount.jsx';
+import EnableDarkMode from '../components/EnableDarkMode';
+import SuscriberCount from '../components/SubscriberCount';
 
-const Header = () => <SuscriberCount />;
-
+class Header extends React.PureComponent {
+  render() {
+    return (
+      <>
+        <EnableDarkMode />
+        <SuscriberCount />
+      </>
+    );
+  }
+}
 export default Header;
