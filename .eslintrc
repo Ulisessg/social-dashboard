@@ -4,7 +4,7 @@
     "es6": true,
     "node": true
   },
-  "extends": ["airbnb"],
+  "extends": ["airbnb", "prettier"],
   "globals": {
     "document": false,
     "escape": false,
@@ -150,7 +150,7 @@
     "padded-blocks": 0,
     "prefer-const": 2,
     "quote-props": 0,
-    "quotes": [2, "single", "avoid-escape"],
+    "quotes": [1, "single", "avoid-escape"],
     "radix": 2,
     "jsx-quotes": [2, "prefer-single"],
     "jsx-a11y/click-events-have-key-events": 0,
