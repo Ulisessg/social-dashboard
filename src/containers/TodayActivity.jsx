@@ -6,8 +6,8 @@ class TodayActivity extends React.PureComponent {
   render() {
     return (
       <>
-        <section>
-          <h1>Overview - Today</h1>
+        <section className='Today'>
+          <h1 className='Today__title'>Overview - Today</h1>
           <Today />
           <Today />
           <Today />

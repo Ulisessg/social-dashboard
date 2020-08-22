@@ -6,7 +6,7 @@ class Subs extends React.PureComponent {
   render() {
     return (
       <>
-        <section>
+        <section className='Subs'>
           <SubscribersBySocialNetwork />
           <SubscribersBySocialNetwork />
           <SubscribersBySocialNetwork />
