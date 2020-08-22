@@ -6,10 +6,12 @@ class Subs extends React.PureComponent {
   render() {
     return (
       <>
-        <SubscribersBySocialNetwork />
-        <SubscribersBySocialNetwork />
-        <SubscribersBySocialNetwork />
-        <SubscribersBySocialNetwork />
+        <section>
+          <SubscribersBySocialNetwork />
+          <SubscribersBySocialNetwork />
+          <SubscribersBySocialNetwork />
+          <SubscribersBySocialNetwork />
+        </section>
       </>
     );
   }

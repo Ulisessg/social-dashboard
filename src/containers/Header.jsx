@@ -7,8 +7,10 @@ class Header extends React.PureComponent {
   render() {
     return (
       <>
-        <EnableDarkMode />
-        <SuscriberCount />
+        <section>
+          <EnableDarkMode />
+          <SuscriberCount />
+        </section>
       </>
     );
   }
