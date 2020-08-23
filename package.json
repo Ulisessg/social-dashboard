@@ -6,7 +6,7 @@
   "scripts": {
     "build": "webpack --mode production",
     "start": "webpack-dev-server --open --mode development",
-    "lint": "eslint src/ --fix"
+    "lint": "eslint --ext .jsx --ext .js --ignore-pattern '/src/styles/*' src/**/* --fix"
   },
   "author": "UlisesSG <ukisessg@gmail.com>",
   "license": "MIT",
@@ -26,6 +26,7 @@
     "@babel/preset-react": "^7.10.4",
     "babel-loader": "^8.1.0",
     "css-loader": "^4.2.1",
+    "file-loader": "^6.0.0",
     "html-loader": "^1.2.0",
     "html-webpack-plugin": "^4.3.0",
     "husky": "^4.2.5",
