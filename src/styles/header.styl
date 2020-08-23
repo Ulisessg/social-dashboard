@@ -1,0 +1,50 @@
+.Header
+  width: 100%
+
+.Container-header
+  width 90vw
+  margin-top: 3vh
+
+.Header__subs
+  border-bottom: 1.5px solid black
+  padding-bottom 15px
+  width 100%
+
+.Header__darkMode
+  display: flex
+  justify-content: space-between
+  align-items: center
+  text-align: center
+  margin-top: 2vh
+  width 100% 
+
+.Header__darkMode--container
+  display flex
+  align-items: center
+  grid-area: darkMode
+  width: 50px
+  height 30px
+  border-radius: 100px
+  background-color: black
+
+.Header__darkMode__button
+  position absolute
+  z-index 1
+  height 20px
+  width: 20px
+  border-radius: 100px
+  margin-left: 4px
+  background-color: red
+  &:hover
+    cursor pointer
+
+@media screen and (min-width 1440px)
+  .Container-header
+    display: flex
+    & .Header__subs
+      border-bottom: none
+    & .Header__darkMode
+      justify-content: flex-end
+      &--title
+        margin-right: 15px 
+      

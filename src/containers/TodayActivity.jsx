@@ -7,15 +7,17 @@ class TodayActivity extends React.PureComponent {
     return (
       <>
         <section className='Today'>
-          <h1 className='Today__title'>Overview - Today</h1>
-          <Today />
-          <Today />
-          <Today />
-          <Today />
-          <Today />
-          <Today />
-          <Today />
-          <Today />
+          <div className='Container'>
+            <h1 className='Today__title'>Overview - Today</h1>
+            <Today />
+            <Today />
+            <Today />
+            <Today />
+            <Today />
+            <Today />
+            <Today />
+            <Today />
+          </div>
         </section>
       </>
     );

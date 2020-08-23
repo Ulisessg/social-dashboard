@@ -7,10 +7,12 @@ class Subs extends React.PureComponent {
     return (
       <>
         <section className='Subs'>
-          <SubscribersBySocialNetwork />
-          <SubscribersBySocialNetwork />
-          <SubscribersBySocialNetwork />
-          <SubscribersBySocialNetwork />
+          <div className='Container'>
+            <SubscribersBySocialNetwork />
+            <SubscribersBySocialNetwork />
+            <SubscribersBySocialNetwork />
+            <SubscribersBySocialNetwork />
+          </div>
         </section>
       </>
     );
