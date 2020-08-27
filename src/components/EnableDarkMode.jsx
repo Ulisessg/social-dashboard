@@ -7,7 +7,7 @@ const EnableDarkMode = () => {
     <div className='Header__darkMode'>
       <h3 className='Header__darkMode--title'>Dark Mode</h3>
       <span className='Header__darkMode--container'>
-        <span className='Header__darkMode__button'></span>
+        <span className='Header__darkMode__button' />
       </span>
     </div>
   );

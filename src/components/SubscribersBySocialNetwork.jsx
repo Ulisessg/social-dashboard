@@ -1,35 +1,36 @@
+//@ts-check
 import React from 'react';
 
 class SubscribersBySocialNetwork extends React.PureComponent {
   render() {
+    const { SocialNetworkImg } = this.props;
+    const { Arrow } = this.props;
+    const { Subs } = this.props;
+    const { Activity } = this.props;
     return (
-      <div className='Subs-container'>
-        <div className='Subs-container__info-network'>
+      <div className='Subs-network'>
+        <div className='Subs-network__info-network'>
           <img
-            className='Subs-container__info-network--img'
-            src='a'
+            className='Subs-network__info-network--img'
+            src={SocialNetworkImg}
             alt='Social Network'
           />
-          <p className='Subs-container__info-network--user'>@nathanf</p>
+          <p className='Subs-network__info-network--user'>@nathanf</p>
         </div>
 
-        <div className='Subs-container__followers'>
-          {/*Dinamic Value */}
-          <h1 className='Subs-container__followers--total'>
-            {Math.round(Math.random() * 1000)}
-          </h1>
-          {/*Dinamic Value */}
-          <p className='Subs-container__followers--title'>Followers</p>
+        <div className='Subs-network__followers'>
+          <h1 className='Subs-network__followers--total'>{Subs}</h1>
+
+          <p className='Subs-network__followers--title'>Followers</p>
         </div>
 
-        <div className='Subs-container__percentage'>
-          {/*Dinamic Value */}
+        <div className='Subs-network__percentage'>
           <img
-            className='Subs-container__percentage--img'
-            src='a'
+            className='Subs-network__percentage--img'
+            src={Arrow}
             alt='Arrow'
           />
-          <p className='Subs-container__percentage--total'>12 Today</p>
+          <p className='Subs-container__percentage--total'>{Activity} Today</p>
         </div>
       </div>
     );

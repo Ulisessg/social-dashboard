@@ -13,5 +13,5 @@ ReactDom.render(
     <Subs />
     <TodayActivity />
   </>,
-  document.getElementById('root')
+  document.getElementById('root'),
 );
